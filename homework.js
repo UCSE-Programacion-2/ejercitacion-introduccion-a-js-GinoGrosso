@@ -399,7 +399,7 @@ function mayusculasTrasTrim(texto) {
 function puedePasarAlEvento(edad, tieneEntrada, esVIP) {
   // puede pasar si edad >= 18 Y (tieneEntrada ES true OR esVIP ES true). Usá && y || explícitos.
   // Tu código:
-  return edad >= 18 && (tieneEntrada || esVIP);
+  return (edad >= 18 && tieneEntrada) || esVIP;
 }
 
 function noEsValorFalso(valor) {
